@@ -34,9 +34,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/alls.min.css"/>
-<link rel="stylesheet" href="header.css" />
-<link rel="stylesheet" href="all1.css">
-<link rel="stylesheet" href="card.css">
+<link rel="stylesheet" href="./css/header.css" />
+<link rel="stylesheet" href="./css/css1.css">
+<link rel="stylesheet" href="./css/card.css">
 <title><?php  echo$_SESSION['film_info']['name']; ?></title>
 </head>
 <body>
@@ -52,7 +52,7 @@
     </section>
     <section style="width:83%;height: 500px;margin-left: 8%;
     display:flex;">
-        <div style="background-image:url(<?php echo $_SESSION['film_info']['image'].'logo.jpg'; ?>);;
+        <div style="background-image:url('<?php echo $_SESSION['film_info']['image'].'logo.jpg'; ?>');;
         background-size:contain;
         background-position:center  ;
         background-repeat: no-repeat;
@@ -78,14 +78,14 @@
                     <span><?php echo $_SESSION['film_info']['cat3'] ?></span>
                 </a>
             </div>
-            <hr>
+            <hr id="hr">
             <div class="description" style="float: left;
         width: 100%;margin-left:10px; margin-bottom:30px;">
                 <span style="color:white;">
                     <?php echo $_SESSION['film_info']['desc1']; ?>
                 </span>
             </div>
-            <hr >
+            <hr id="hr">
             <span class="stars" >stars:</span>
             <a href="#img1" role="button" class="categorya">
                 <span><?php echo $_SESSION['film_info']['actor1'] ?></span>
@@ -93,7 +93,7 @@
             <a href="#img2" role="button" class="categorya">
                 <span><?php echo $_SESSION['film_info']['actor2'] ?></span>
             </a>
-            <hr>
+            <hr id="hr">
             <div style="width:850px; height:480px;margin-top:80px;">
             <?php require"swiper.php"?>
             </div>

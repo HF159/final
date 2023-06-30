@@ -13,9 +13,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/alls.min.css"
     />
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="all1.css">
-    <link rel="stylesheet" href="poster.scss">
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/css2.css">
+    <link rel="stylesheet" href="./css/posterr.scss">
     <title>High Frequency</title>
   </head>
   <body>
@@ -24,18 +24,19 @@
     <section >
       <div class="container">
         <div class="item">
-          <div class="quote">
-            <p>I am Groot.<span>Groot</span></p>
-          </div>
+            <div class="quote">
+              <p>That really is America's ass.<span>Captain America</span></p>
+            </div>
         </div>
         <div class="item">
           <div class="quote">
             <p>You'r the head of security and your password is 'password'&nbsp;?<span>Peter Parker</span></p>
           </div>
         </div>
+
         <div class="item">
           <div class="quote">
-            <p>That really is America's ass.<span>Captain America</span></p>
+            <p>I am Groot.<span>Groot</span></p>
           </div>
         </div>
         <div class="item">
@@ -56,6 +57,8 @@
     </div>
   </section>
   <br><br><br><br>
+  <hr  style="margin-left: 10%;width:80%;margin-bottom:50px;">
+  
   <section class="page-content">
       
     
@@ -96,7 +99,23 @@ margin-bottom:70px;">
 } ?>
     
     </section>
-
+    <hr  style="margin-left: 10%;width:80%;margin-bottom:50px;">
+    <?php
+    $query1 = "SELECT cat_name FROM category";
+    $result = mysqli_query($con,$query1);
+    
+    ?>
+  <div class="category" style="display: flex;
+  align-items: center;
+  margin-left:25%;">
+      <?php  if ($result) {
+      while ($row = mysqli_fetch_array($result)) {
+        $cat_name = $row['cat_name'];?>
+                <a href="#" role="button" class="categorya1" >
+                    <span><?php echo $cat_name ?></span>
+                </a>
+      <?php } }?>
+  </div>
   
     <?php require"footer1.php" ?>
     <script src="script.js"></script>

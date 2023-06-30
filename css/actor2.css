@@ -1,0 +1,77 @@
+.card {
+    width: 250px;
+    height: 324px;
+    background: rgba(211, 211, 211, 0.199);
+    position: absolute;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
+  }
+  
+  #c1 {
+    background-color: black;
+  }
+  
+  #c2 {
+    background-color: blue;
+  }
+  
+  #c3 {
+    background-color: red;
+  }
+  
+  #c4 {
+    background-color: green;
+  }
+  
+  .main:hover #c1 {
+    transform: translateX(-100px) rotate(-40deg);
+  }
+  
+  .main:hover #c2 {
+    transform: translateX(-50px) rotate(-30deg);
+  }
+  
+  .main:hover #c3 {
+    transform: translateX(0) rotate(-20deg);
+  }
+  
+  .main:hover #c4 {
+    transform: translateX(50px) rotate(-10deg);
+  }
+  
+  #c1:hover {
+    transform: translateX(-200px) rotate(0deg) !important;
+  }
+  
+  #c2:hover {
+    transform: translateX(-140px) rotate(0deg) !important;
+  }
+  
+  #c3:hover {
+    transform: translateX(-100px) rotate(0deg) !important;
+  }
+  
+  #c4:hover {
+    transform: translateX(50px) rotate(0deg) !important;
+  }
+  
+  
+  .main {
+    width: 30%;
+
+    display: grid;
+    height: 30vmax;
+    place-items: center;
+  }
+  .section{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    flex-wrap: wrap;
+    align-content:flex-start;
+  }
+  .text:hover{
+    z-index:1
+  }

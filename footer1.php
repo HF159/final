@@ -117,7 +117,7 @@ display: block;
 }
     </style>
 
-<footer>
+<footer id="footer">
     <div class="footer-content">
         <h3>High Frequency</h3>
         <p>Welcome to our website, your exclusive preview of upcoming films! Discover captivating synopses, trailers, and behind-the-scenes insights. Stay ahead of the curve and join our passionate film community. Lights, camera, excitement!</p>
@@ -133,7 +133,7 @@ display: block;
         <p>copyright &copy; <a href="#">High Frequency</a>  </p>
                 <div class="footer-menu">
                     <ul class="f-menu">
-                    <li><a href="">Home</a></li>
+                    <li><a href="./index.php">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Contact</a></li>
                     <li><a href="">Blog</a></li>
