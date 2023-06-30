@@ -14,7 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/alls.min.css"
     />
     <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/css2.css">
+    <link rel="stylesheet" href="./css/css1.css">
     <link rel="stylesheet" href="./css/posterr.scss">
     <title>High Frequency</title>
   </head>
